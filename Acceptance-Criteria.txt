@@ -1,0 +1,46 @@
+# Manager Acceptance Criteria
+**Feature** Users of Tech Project application should be able to login to their respective homepages
+
+**Scenario**    As a manager I want to sign in so I can view my custom homepage
+    **Given**       the employee is on the login page
+    **When**        the manager enters his correct username
+    **When**        the manager enters his correct password
+    **When**        the employee clicks the login button
+    **Then**        the manager should be logged in to the manager home page
+
+**Scenario**    As a manager I want to sign out so I can prevent others from accessing my information
+    **Given**       the manager is on the manager homepage
+    **When**        the employee clicks the Sign out button
+    **Then**        the manager should be logged out to the manager home page and back to login homepage
+
+**Scenario**    As a manager I want to view reimbursement requests so that I can approve requests 
+    **Given**       the manager is on manager homepage 
+    **When**        the manager can choose to accept request from drop down option
+    **When**        the manager can click on submit button
+    **Then**        the new accepted request should be showed in the table of accepted requests 
+
+**Scenario**    As a manager I want to view reimbursement requests so that I can deny requests  
+    **Given**       the manager is on manager homepage 
+    **When**        the manager can choose to deny request from drop down option
+    **When**        the manager can click on submit button
+    **Then**        the new denied request should be showed in the table of denied requests  
+
+# Tester Acceptance Criteria
+
+**Scenario**    As a employee I want to sign in so I can view my custom homepage
+    **Given**       the employee is on the login page
+    **When**        the employee enters his correct username
+    **When**        the employee enters his correct password
+    **When**        the employee clicks the login button
+    **Then**        the employee should be logged in to the employee home page
+
+**Scenario**    As a employee I want to sign out so I can prevent others from accessing my information
+    **Given**       the employee is on the employee homepage
+    **When**        the employee clicks the Sign out button
+    **Then**        the employee should be logged out to the employee home page and back to login homepage
+
+**Scenario**    As a employee I want to create a reimbursement request so than I can get money back I spent for the company     
+    **Given**       the employee is on the employee homepage
+    **When**        the employee can start writing their request in the text area    
+    **When**        the employee can click on the submit button
+    **Then**        the created request should showe on the table of request
