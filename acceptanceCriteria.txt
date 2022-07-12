@@ -37,7 +37,8 @@
 **When**        the employee clicks the Sign out button
 **Then**        the employee should be logged out to the manager home page and back to login homepage
 
-**Scenario**    As a employee I want to create a reimbursement request so than I can     
-**Given**
-**Then**
-**When**
+**Scenario**    As a employee I want to create a reimbursement request so than I can get money back I spent for the company     
+**Given**       the employee is on the employee homepage
+**When**        the employee can start writing request in the text area    
+**When**        the employee can click on submit button
+**Then**        the created request should showed on the table of request
