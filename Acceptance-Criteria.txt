@@ -15,13 +15,13 @@
 
 **Scenario**    As a manager I want to view reimbursement requests so that I can approve requests 
     **Given**       the manager is on manager homepage 
-    **When**        the manager can choose to accept request from drop down option
+    **When**        the manager can choose to accept request of $1000 or under from drop down option
     **When**        the manager can click on submit button
     **Then**        the new accepted request should be showed in the table of accepted requests 
 
 **Scenario**    As a manager I want to view reimbursement requests so that I can deny requests  
     **Given**       the manager is on manager homepage 
-    **When**        the manager can choose to deny request from drop down option
+    **When**        the manager can choose to deny request of over $1000 from drop down option
     **When**        the manager can click on submit button
     **Then**        the new denied request should be showed in the table of denied requests  
 
@@ -41,6 +41,7 @@
 
 **Scenario**    As a employee I want to create a reimbursement request so than I can get money back I spent for the company     
     **Given**       the employee is on the employee homepage
-    **When**        the employee can start writing their request in the text area    
+    **When**        the employee can start writing their reason for reimbursement in the text area  
+    **When**        the employee can request a reimbursement of $1000 or under  
     **When**        the employee can click on the submit button
     **Then**        the created request should showe on the table of request
