@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Dirty Inc. Login</title>
+
+</head>
+<body>
+
+
+    <center><h1>Welcome to Fantastic 4 Login</h1></center>
+    <br>
+    <center><h2>Enter your login criteria below</h2></center>
+
+    <center><input type="text" placeholder="username" id="username"></center>
+    <br>
+    <center><input type="password" placeholder="password" id="password"></center>
+    <br>
+    <center><button onclick="login()">login</button></center>
+
+
+</body>
+
+<script>
+        // to let my API validate login info I need to attach the username and password to the http request
+           
+
+    async function login() {
+        let loginInfo = {
+            "username": document.getElementById("username").value,
+            "password": document.getElementById("password").value
+        }
+
+        // now that I have the login info I need to covert it into a JSON
+        let loginJSON = JSON.stringify(loginInfo)
+
+        let config = {
+            method: "PATCH", // method is a reference to the kind  of request you are making (the verb) GET is the default
+            headers: { 'Content-Type': "application/json" }, // some APIs will return an error message without this value included
+            body: loginJSON // stringify converts a Javascript object into a JSON
+        }
+        let httpResponse = await fetch("https://bugcatcher.coe.revaturelabs.com/1/login", config); // make sure to enter the url assigned to you
+
+
+        if(httpResponse.status === 200){ 
+            let responseBody = await httpResponse.json(); 
+
+            if(responseBody.role === "Tester"){ 
+                console.log(responseBody.username)
+                let usernameTesterPage = responseBody.username;
+                sessionStorage.setItem("username", usernameTesterPage);
+                window.location.href = "tester-page.html"
+            } else {
+                window.location.href = "manager-page.html";
+            }
+        } else {
+            let  usernameManagerPage = responseBody.username;
+            sessionStorage.setItem("username", usernameManagerPage); 
+            alert(responseBody.detail);
+        }
+
+      }
+    
+    
+</script>
+
