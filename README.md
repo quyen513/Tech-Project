@@ -1,7 +1,7 @@
 # Tech-Project
 Team 6, members: 
   - Quyen Vu
-  - Jason 
+  - Jason Sainvilus
   - Amanda Rodriguez
   - Jacob Ambrose
  
