@@ -3,7 +3,7 @@
     Db name:techproject
     user:techproject
     password:techproject
-    Created by Jacob
+   
     
 # Create Tables DDL
 
