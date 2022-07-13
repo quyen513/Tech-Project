@@ -25,7 +25,7 @@
     **When**        the manager can click on submit button
     **Then**        the new denied request should be showed in the table of denied requests  
 
-# Tester Acceptance Criteria
+# employee Acceptance Criteria
 
 **Scenario**    As a employee I want to sign in so I can view my custom homepage
     **Given**       the employee is on the login page
@@ -44,4 +44,4 @@
     **When**        the employee can start writing their reason for reimbursement in the text area  
     **When**        the employee can request a reimbursement of $1000 or under  
     **When**        the employee can click on the submit button
-    **Then**        the created request should showe on the table of request
+    **Then**        the created request should showed on the table of request
