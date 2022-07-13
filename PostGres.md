@@ -1,3 +1,10 @@
+# Tech-Project Database
+    endpoint:techproject.cumkbny97iwq.us-east-1.rds.amazonaws.com
+    Db name:techproject
+    user:techproject
+    password:techproject
+    Created by Jacob
+    
 # Create Tables DDL
 
     DROP TABLE IF EXISTS employees;
