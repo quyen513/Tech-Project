@@ -59,7 +59,7 @@
     create user employee;
 
     alter user manager with password 'manager';
-    alter user manager with password 'employee';
+    alter user employee with password 'employee';
 
     grant select, update, insert,delete on employees to manager;
 
