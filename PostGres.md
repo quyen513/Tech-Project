@@ -3,7 +3,7 @@
     Db name:techproject
     user:techproject
     password:techproject
-
+ 
 # Create Tables DDL
 
     DROP TABLE IF EXISTS employees;
