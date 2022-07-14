@@ -1,3 +1,16 @@
+# Test Plan
+## Technologies to be used
+-Java
+-Maven
+-Hibernate
+-AWS RDS (Postgres)
+-Selenium
+-Cucumber
+-Junit
+-HTML
+-CSS
+-JavaScript
+
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
 
