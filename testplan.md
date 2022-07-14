@@ -11,6 +11,17 @@
 - CSS
 - JavaScript
 
+## Entities Tracker
+### employee
+- employee_id
+- employee_name
+- employee_role
+### request
+- request_id
+- request_desc
+- status
+- amount
+- 
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
 
