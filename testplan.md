@@ -13,17 +13,17 @@
 
  ## Entities Tracker
    ### employee:
-     - employee_id (int) (primary identifier)
-     - employee_name (String)
-     - employee_role (String)
+   - employee_id (int) (primary identifier)
+   - employee_name (String)
+   - employee_role (String)
    ### request
-    - request_id (int) (primary identifier)
-    - request_desc (String)
-    - status (String)
-    - amount (int)
+   - request_id (int) (primary identifier)
+   - request_desc (String)
+   - status (String)
+   - amount (int)
 
    ### User stories and associated unit/service tests 
-    - As a manager I want to view reimbursement requests so I can start addressing them
+   1. As a manager I want to view reimbursement requests so I can start addressing them
        - Unit tests
            - remove request from database
                -method: removeRequest()
