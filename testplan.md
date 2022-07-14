@@ -12,16 +12,18 @@
 - JavaScript
 
 ## Entities Tracker
-### employee
-- employee_id
-- employee_name
-- employee_role
+### employee:
+    - employee_id
+    - employee_name
+    - employee_role
 ### request
-- request_id
-- request_desc
-- status
-- amount
-- 
+    - request_id
+    - request_desc
+    - status
+    - amount
+
+### User stories and associated unit/service tests 
+
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
 
