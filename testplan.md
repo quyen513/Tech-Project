@@ -24,7 +24,7 @@
    - reason (String)
    - status (String)
    - amount (int)
- 
+   - approved_By (int)  
    
 
    ### User stories and associated unit/service tests 
@@ -37,19 +37,22 @@
            - see all requests in the database
                - method: getAllRequests()
        - Service tests: N/A
+        
    2. As a manager I want to view global reimbursement statistics so I can see how much money the company has given in reimburesments
        - Unit tests
            - View all the approved reimbursement 
-              - method: getAllAprovedRequest() 
+              - method: getAllRequest() 
        - Service test 
            - make sure only approved requests are added to the total
+              - method: checkApprovedRequest() 
               
    3. As a manager I want to view my reimbursement statistics so I can see how much money I have given in reimburesments
        - Unit tests
            - Approved requests by manager
-              - method: getManagerApprovedRequest()
+              - method: getAllRequests()
        - Service test
-           - N/A
+           - Requests by other manager is not allowed
+             - method: checkRequestApprovedBy()
             
    4. As an employee I want to create a reimbursement request so I can get money back I spent for the company
        - Unite tests
@@ -63,4 +66,10 @@
               - method: checkRequestAmount()
            - reason of request no longer than 500 characters
               - method: checkRequestReson() 
-
+              
+   5. As an employee I want to view my reimbursement statistics so I can see how much money I have been given in reimburesments
+      - Unit tests
+          - view all my approved requests
+             - method: getEmployeeApprovedRequests()
+      - Service tests
+          - N/A   
