@@ -16,11 +16,16 @@
    - employee_id (int) (primary identifier)
    - employee_name (String)
    - employee_role (String)
+   - username (String)
+   - password (String)
+ 
    ### request
    - request_id (int) (primary identifier)
    - reason (String)
    - status (String)
    - amount (int)
+   - by_manager (String) 
+   
 
    ### User stories and associated unit/service tests 
    1. As a manager I want to view reimbursement requests so I can start addressing them
@@ -32,8 +37,21 @@
            - see all requests in the database
                - method: getAllRequests()
        - Service tests: N/A
-      
-   2. As an employee I want to create a reimbursement request so I can get money back I spent for the company
+   2. As a manager I want to view global reimbursement statistics so I can see how much money the company has given in reimburesments
+       - Unit tests
+           - View all the approved reimbursement 
+              - method: getAllAprovedRequest()
+           -  
+       - Service test 
+           - make sure only approved requests are added to the total
+              
+   3. As a manager I want to view my reimbursement statistics so I can see how much money I have given in reimburesments
+       - Unit tests
+           - method: getManagerReimbursementStatistics()
+       - Service test
+           - 
+             
+   4. As an employee I want to create a reimbursement request so I can get money back I spent for the company
        - Unite tests
            - add new request to database
               - method: createRequest() 
