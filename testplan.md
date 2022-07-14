@@ -1,28 +1,28 @@
 # Test Plan
-## Technologies to be used
-- Java
-- Maven
-- Hibernate
-- AWS RDS (Postgres)
-- Selenium
-- Cucumber
-- Junit
-- HTML
-- CSS
-- JavaScript
+ ## Technologies to be used
+ - Java
+ - Maven
+ - Hibernate
+ - AWS RDS (Postgres)
+ - Selenium
+ - Cucumber
+ - Junit
+ - HTML
+ - CSS
+ - JavaScript
 
 ## Entities Tracker
-### employee:
+ ### employee:
     - employee_id
     - employee_name
     - employee_role
-### request
+ ### request
     - request_id
     - request_desc
     - status
     - amount
 
-### User stories and associated unit/service tests 
+ ### User stories and associated unit/service tests 
 
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
