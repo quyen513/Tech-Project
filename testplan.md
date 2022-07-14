@@ -25,9 +25,14 @@
    ### User stories and associated unit/service tests 
    1. As a manager I want to view reimbursement requests so I can start addressing them
        - Unit tests
-           - remove request from database
-               -method: removeRequest()
-
+           - approve request 
+               -method: approveRequest()
+           - deny request
+               -method: denyRequest()  
+       - Service tests:
+       - +        
+   2. As an employee I want to create a reimbursement request so I can get money back I spent for the company
+       - Unite tests
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
 
