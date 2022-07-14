@@ -13,16 +13,20 @@
 
  ## Entities Tracker
    ### employee:
-     - employee_id
-     - employee_name
-     - employee_role
+     - employee_id (int) (primary identifier)
+     - employee_name (String)
+     - employee_role (String)
    ### request
-    - request_id
-    - request_desc
-    - status
-    - amount
+    - request_id (int) (primary identifier)
+    - request_desc (String)
+    - status (String)
+    - amount (int)
 
    ### User stories and associated unit/service tests 
+    - As a manager I want to view reimbursement requests so I can start addressing them
+       - Unit tests
+           - remove request from database
+               -method: removeRequest()
 
 Positive Test- Manager/Employee login successful 
 Negative Test - Manager/Employee login unsuccesful
